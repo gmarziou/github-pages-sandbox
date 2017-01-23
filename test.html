@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JHipster is a fully Open Source, widely used application generator. Easily create high-quality Spring Boot + AngularJS projects!">
+    <meta name="author" content="JHipster Team">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@java_hipster" />
+    <meta name="twitter:title" content="Generate a full stack Java + JavaScript application in a few steps" />
+    <meta name="twitter:description" content="JHipster is a fully Open Source, widely used application generator. It leverages cool technologies like Spring Boot, AngularJS and Yeoman to give you a high level of productivity and quality." />
+    <meta name="twitter:image:src" content="http://jhipster.github.io/images/screenshot_1.png" />
+    <meta name="twitter:url" content="http://jhipster.github.io/" />
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#353d47">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#353d47">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#353d47">
+    <title>JHipster - Generate your Spring Boot + AngularJS apps!</title>
+
+    <!-- CSS Libs -->
+    <link rel="stylesheet" type="text/css" href="https://jhipster.github.io/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://jhipster.github.io/lib/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://jhipster.github.io/lib/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://jhipster.github.io/lib/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://jhipster.github.io/lib/css/dataTables.bootstrap.css">
+    <!-- CSS App -->
+    <link rel="stylesheet" type="text/css" href="https://jhipster.github.io/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://jhipster.github.io/css/themes/flat-blue.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://jhipster.github.io/css/home.css">
+    
+    <!-- Bootstrap Docs CSS subset to get icon -->
+    <!--<link href="/css/bootstrap-docs.css" rel="stylesheet">-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicon with QHD -->
+    <link rel="icon" type="image/png" href="https://jhipster.github.io/images/logo/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://jhipster.github.io/images/logo/favicon-16x16.png" sizes="16x16" />
+</head>
+
+<body class="flat-blue">
+    <div class="app-container home">
+        <div class="row content-container">
+            <nav class="navbar navbar-inverse navbar-fixed-top navbar-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-expand-toggle">
+                            <i class="fa fa-bars icon"></i>
+                        </button>
+                        <ol class="breadcrumb navbar-breadcrumb">
+                            <li class="active"></li>
+                        </ol>
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-th icon"></i>
+                        </button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right">
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs light">
+                            <i class="fa fa-times icon"></i>
+                        </button>
+                        
+                        <li class="page-scroll">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#opts">Options</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#quick">Quick Start</a>
+                        </li>
+                        <li class="page-scroll">
+                            <a href="#modules">Modules</a>
+                        </li>
+                        
+                        <li class="">
+                            <a href="https://github.com/jhipster/generator-jhipster" class="dropdown-toggle navlink" target="_blank" role="button"><i class="fa fa-github fa-2x"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+            <div class="side-menu sidebar-inverse">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="side-menu-container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/">
+                                <div class="icon"><img src="https://jhipster.github.io/images/logo/logo-jhipster2x.png" height="50px"></div>
+                                <div class="title brand">JHipster </div>
+                            </a>
+                            <button type="button" class="navbar-expand-toggle pull-right visible-xs">
+                                <i class="fa fa-times icon"></i>
+                            </button>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="/">
+                                    <span class="icon fa fa-home"></span><span class="title">Home</span>
+                                </a>
+                            </li>
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-5"><span class="icon fa fa-fw fa-code"></span><span class="title">Development</span></a>
+                                <div id="dropdown-5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li ><a href="https://jhipster.github.io/development/"><i class="fa fa-fw fa-code"></i> Using in development</a></li>
+                                            <li ><a href="https://jhipster.github.io/profiles/"><i class="fa fa-fw fa-group"></i> Managing profiles</a></li>
+                                            <li ><a href="https://jhipster.github.io/using-angularjs/"><i class="fa fa-fw fa-html5"></i> Using AngularJS</a></li>
+                                            <li ><a href="https://jhipster.github.io/customizing-bootstrap/"><i class="fa fa-fw fa-css3"></i> Customizing Bootstrap</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </div>
+            <!-- Main Content -->
+
+
+            <div id="page-wrapper" class="container-fluid">
+                <div class="side-body" id="page-top">
+                     <div ng-app="jhipster.home" ng-controller="HomeController" class="home-container">
+    <!-- Header -->
+    <header class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo-big"><img class="img-responsive" src="images/logo/logo-jhipster-drink-coffee.png" alt=""></div>
+                    <div class="intro-text">
+                        <span class="brand">Greetings, Java Hipster!</span>
+                        <hr class="star-light">
+                        <div class="row stats">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <a href="https://www.npmjs.com/package/generator-jhipster" target="_blank">
+                                    <div class="card dark summary-inline">
+                                        <div class="card-body">
+                                            <i class="icon fa fa-download fa-3x"></i>
+                                            <div class="content" ng-cloak>
+                                                <div class="title">{(npmDownloads)}</div>
+                                                <div class="sub-title">Downloads in last 30 days</div>
+                                            </div>
+                                            <div class="clear-both"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <a href="https://github.com/jhipster/generator-jhipster" target="_blank">
+                                    <div class="card dark summary-inline">
+                                        <div class="card-body">
+                                            <i class="icon fa fa-github fa-3x"></i>
+                                            <div class="content" ng-cloak>
+                                                <div class="title">{(gitConfig.stargazers_count)}</div>
+                                                <div class="sub-title">Stars</div>
+                                            </div>
+                                            <div class="clear-both"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <a href="https://github.com/jhipster/generator-jhipster/contributors" target="_blank">
+                                    <div class="card dark summary-inline">
+                                        <div class="card-body">
+                                            <i class="icon fa fa-users fa-3x"></i>
+                                            <div class="content" ng-cloak>
+                                                <div class="title">{(gitConftributors)}</div>
+                                                <div class="sub-title">Contributors</div>
+                                            </div>
+                                            <div class="clear-both"></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- about and news section -->
+    <section id="about" class="home-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="heading">NEW: 3 hours of JHipster on video!</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        3 hours of JHipster live presentation and demo by our leads Julien Dubois and Deepu K Sasidharan at Devoxx Belgium on November, 8th 2016.
+                    </p>
+                    <p>
+                        Slides are available on <a href="http://www.slideshare.net/julien.dubois/devoxx-being-productive-with-jhipster" target="_blank">SlideShare</a> and code developed live is on <a href="https://github.com/jhipster/devoxx-2016" target="_blank">GitHub</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 col-sm-12 text-center">
+                    <div class="video-container">
+                        <iframe width="640" height="360" src="https://www.youtube.com/embed/dzdjP3CPOCs" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+    <!-- Javascript Libs -->
+    <script type="text/javascript" src="https://jhipster.github.io/lib/js/jquery.min.js"></script>
+    <script type="text/javascript" src="https://jhipster.github.io/lib/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
