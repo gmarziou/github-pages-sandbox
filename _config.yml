@@ -1,1 +1,17 @@
 theme: jekyll-theme-architect
+safe:        true
+markdown: kramdown
+exclude: [node_modules, bower_components]
+kramdown:
+  input: GFM
+gems:
+  - jekyll-redirect-from
+  - jekyll-markdown-block
+whitelist:
+  - jekyll-redirect-from
+  - jekyll-markdown-block
+defaults:
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
