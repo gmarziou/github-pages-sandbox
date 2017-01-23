@@ -129,31 +129,25 @@
 
     <!-- about and news section -->
     <section id="about" class="home-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="heading">NEW: 3 hours of JHipster on video!</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <p>
-                        3 hours of JHipster live presentation and demo by our leads Julien Dubois and Deepu K Sasidharan at Devoxx Belgium on November, 8th 2016.
-                    </p>
-                    <p>
-                        Slides are available on <a href="http://www.slideshare.net/julien.dubois/devoxx-being-productive-with-jhipster" target="_blank">SlideShare</a> and code developed live is on <a href="https://github.com/jhipster/devoxx-2016" target="_blank">GitHub</a>.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-sm-12 text-center">
-                    <div class="video-container">
-                        <iframe width="640" height="360" src="https://www.youtube.com/embed/dzdjP3CPOCs" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
+## Using Frontend Tools
+
+<div class="container">
+<ul class="nav nav-tabs nav-justified" role="tablist">
+  <li role="presentation" class="active"><a href="#ng2_using_webpack" data-toggle="tab"> Angular 2</a></li>
+  <li role="presentation"><a href="#ng1_using_gulp" data-toggle="tab">AngularJS 1</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active panel" id="ng2_using_webpack">
+{% include development_webpack.md %}
+  </div>
+
+  <div class="tab-pane panel" id="ng1_using_gulp">
+{% include development_gulp.md %}
+  </div>
+</div>
+</div>
+
     </section>
 
 </div>
