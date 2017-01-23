@@ -1,4 +1,3 @@
-theme: jekyll-theme-architect
 safe:        true
 markdown: kramdown
 exclude: [node_modules, bower_components]
