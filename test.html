@@ -158,10 +158,10 @@
         <script>
             <!-- Load tab content from HTML files generated from markdown -->
             $( document ).ready(function() {
-                $('#ng2_using_webpack').load('development_gulp.html', function(text) {
+                $('#ng2_using_webpack').load('development_gulp.html body', function(text) {
   console.log( text );
 });
-                $('#ng1_using_gulp').load('development_webpack.html h3');
+                $('#ng1_using_gulp').load('development_webpack.html body');
             })
         </script>
 
