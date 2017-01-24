@@ -131,22 +131,22 @@
     <section id="about" class="home-section">
 ## Using Frontend Tools
 
-<div class="container">
-<ul class="nav nav-tabs nav-justified" role="tablist">
-  <li role="presentation" class="active"><a href="#ng2_using_webpack" data-toggle="tab"> Angular 2</a></li>
-  <li role="presentation"><a href="#ng1_using_gulp" data-toggle="tab">AngularJS 1</a></li>
-</ul>
+    <div class="container">
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li role="presentation" class="active"><a href="#ng2_using_webpack" data-toggle="tab"> Angular 2</a></li>
+            <li role="presentation"><a href="#ng1_using_gulp" data-toggle="tab">AngularJS 1</a></li>
+        </ul>
 
-<div class="tab-content">
-  <div class="tab-pane active panel" id="ng2_using_webpack">
-    <a href='development_webpack'>Content</a>
-  </div>
+        <div class="tab-content">
+            <div class="tab-pane active panel" id="ng2_using_webpack">
+                <a href='development_webpack'>Content</a>
+            </div>
 
-  <div class="tab-pane panel" id="ng1_using_gulp">
-    <a href='development_gulp'>Content</a>
-  </div>
-</div>
-</div>
+            <div class="tab-pane panel" id="ng1_using_gulp">
+                <a href='development_gulp'>Content</a>
+            </div>
+        </div>
+    </div>
 
     </section>
 
@@ -157,11 +157,11 @@
     <script type="text/javascript" src="https://jhipster.github.io/lib/js/jquery.min.js"></script>
     <script type="text/javascript" src="https://jhipster.github.io/lib/js/bootstrap.min.js"></script>
     <script>
-
-    $( document ).ready(function() {
-        $('#ng2_using_webpack').load('/development_gulp');
-        $('#ng1_using_gulp').load('/development_webpack.html');
-    })
+        $( document ).ready(function() {
+            console.log('loading');
+            $('#ng2_using_webpack').load('/development_gulp');
+            $('#ng1_using_gulp').load('/development_webpack.html');
+        })
     </script>
 </body>
 
