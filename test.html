@@ -139,22 +139,30 @@
 
 <div class="tab-content">
   <div class="tab-pane active panel" id="ng2_using_webpack">
-{% markdown %}{% include ./development_webpack.md %}{% endmarkdown %}
+    <a href='development_webpack'>Content</a>
   </div>
 
   <div class="tab-pane panel" id="ng1_using_gulp">
-{% markdown %}{% include ./development_gulp.md %}{% endmarkdown %}
+    <a href='development_gulp'>Content</a>
   </div>
 </div>
 </div>
 
     </section>
 
+
+
 </div>
     <!-- Javascript Libs -->
     <script type="text/javascript" src="https://jhipster.github.io/lib/js/jquery.min.js"></script>
     <script type="text/javascript" src="https://jhipster.github.io/lib/js/bootstrap.min.js"></script>
+    <script>
 
+    $( document ).ready(function() {
+        $('#ng2_using_webpack').load('/development_gulp');
+        $('#ng1_using_gulp').load('/development_webpack.html');
+    })
+    </script>
 </body>
 
 </html>
