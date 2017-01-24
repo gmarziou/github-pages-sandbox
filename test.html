@@ -158,7 +158,7 @@
         <script>
             <!-- Load tab content from HTML files generated from markdown -->
             $( document ).ready(function() {
-                $('#ng2_using_webpack').load('development_gulp.html body', function(text) {
+                $('#ng2_using_webpack').load('development_gulp.html .container', function(text) {
   console.log( text );
 });
                 $('#ng1_using_gulp').load('development_webpack.html body');
